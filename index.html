@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page of countries</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body class="light-theme">
+    <header class="header">
+      <button class="reset">Where in the world?</button>
+
+      <button class="header__theme-button">
+        <img class="header__btn-img" alt="Moon" src="img/moon.svg" />
+        <span class="header__theme-text">Dark mode</span>
+      </button>
+    </header>
+
+    <section class="search">
+      <form class="search__country">
+        <input
+          type="text"
+          id="input"
+          class="search__input"
+          placeholder="Search for a country..."
+        />
+        <button class="search__button" id="search-btn">
+          <img class="search__btn-img" alt="search" src="img/search.svg" />
+        </button>
+      </form>
+
+      <form name="regionsForm" class="search__region">
+        <select
+          class="search__region-items"
+          name="regionList"
+          id="region-select"
+        >
+          <option class="search__region-item" value="filter" selected disabled>
+            Filter by Region
+          </option>
+          <option class="search__region-item" value="africa">Africa</option>
+          <option class="search__region-item" value="americas">Americas</option>
+          <option class="search__region-item" value="asia">Asia</option>
+          <option class="search__region-item" value="europe">Europe</option>
+          <option class="search__region-item" value="oceania">Oceania</option>
+        </select>
+      </form>
+    </section>
+
+    <main class="countries">
+      <ul class="countries__list"></ul>
+    </main>
+
+    <template class="template">
+      <li class="countries__item card">
+        <div class="card__flag">
+          <img src="" class="card__flag-img" />
+        </div>
+        <div class="card__desc">
+          <p class="card__desc-name"></p>
+          <p class="card__desc-population"></p>
+          <p class="card__desc-region"></p>
+          <p class="card__desc-capital"></p>
+        </div>
+      </li>
+    </template>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

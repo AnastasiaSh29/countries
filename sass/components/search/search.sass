@@ -1,0 +1,59 @@
+.search
+    max-width: 960px
+    margin: 0 auto 60px auto
+    padding: 20px
+    display: flex
+    justify-content: space-between
+
+
+    &__country
+        display: flex
+        justify-content: space-between
+        background: $background-color-light
+        box-shadow: $box-shadow
+        border-radius: 5px
+        border: 1px solid #cbcbcb
+        height: 50px
+        width: 320px
+
+    &__input
+        color: $font-color-primary
+        font-size: 18px
+        font-weight: bold
+        padding: 5px 10px
+        outline: none
+        transition: all 0.3s ease
+        opacity: 0.6
+        appearance: none
+        border: none
+        border-radius: 5px 0px 0px 5px
+        &:hover 
+            opacity: 1
+
+
+    &__button
+        border: none
+        padding: 0px
+        margin: 0px 15px
+        cursor: pointer
+        background: none
+        &:hover
+            transform: scale(1.4)
+            transition: all 0.4s ease
+
+    &__btn-img
+        width: 25px
+           
+
+    &__region-items
+        width: 250px
+        font-size: 18px
+        font-weight: bold
+        border-radius: 5px
+        border: 1px solid #cbcbcb
+        box-shadow: $box-shadow
+        background: $background-color-light
+        padding: 5px 10px
+        height: 50px
+        cursor: pointer
+        text-transform: capitalize
